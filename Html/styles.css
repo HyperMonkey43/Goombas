@@ -73,24 +73,35 @@
   }
 
   .subtitle{
-    margin-top: 230px;
+    margin-top: 150px;
     font-size: 55px;
     color: white;
     text-align: center;
     font-weight: bold;
+
   }
 
-  .subtext{
+  .subtextC{
     font-size: 30px;
     color: white;
-    text-align: left;
+    text-align: center;
     font-weight: bold;
-    margin-left:  180px;
+    margin-left:  100px;
     margin-right: 950px;
     margin-bottom: 50px;
   }
 
   .subtextL{
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    margin-left:  100px;
+    margin-right: 950px;
+    margin-bottom: 50px;
+  }
+
+  .subtextR{
     font-size: 30px;
     color: white;
     text-align: right;
@@ -99,3 +110,16 @@
     margin-right: 180px;
     margin-bottom: 50px;
   }
+  
+  .aboutus{
+  background-color: rgb(243, 201, 150);
+  margin-left: 65px;
+  margin-right: 65px;
+  }
+
+  .chef{
+    background-color: rgb(255, 203, 126);
+    margin-left: 65px;
+    margin-right: 65px;
+    margin-bottom: 100px;
+    }
