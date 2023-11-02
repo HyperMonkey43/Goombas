@@ -71,3 +71,21 @@
     text-align: center;
     font-weight: bold;
   }
+
+  .aboutus{
+    margin-top: 230px;
+    font-size: 55px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .aboutus-text{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-left:  280px;
+    margin-right: 280px;
+    margin-bottom: 50px;
+  }
