@@ -112,12 +112,15 @@
   }
   
   .aboutus{
-  background-color: rgb(243, 201, 150);
-  margin-left: 65px;
-  margin-right: 65px;
+    border-radius: 15px;
+    background-color: rgb(243, 201, 150);
+    margin-left: 65px;
+    margin-right: 65px;
+    margin-bottom: 100px;
   }
 
   .chef{
+    border-radius: 15px;
     background-color: rgb(255, 203, 126);
     margin-left: 65px;
     margin-right: 65px;
