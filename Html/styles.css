@@ -72,7 +72,7 @@
     font-weight: bold;
   }
 
-  .aboutus{
+  .subtitle{
     margin-top: 230px;
     font-size: 55px;
     color: white;
@@ -80,12 +80,22 @@
     font-weight: bold;
   }
 
-  .aboutus-text{
+  .subtext{
     font-size: 30px;
     color: white;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
-    margin-left:  280px;
-    margin-right: 280px;
+    margin-left:  180px;
+    margin-right: 950px;
+    margin-bottom: 50px;
+  }
+
+  .subtextL{
+    font-size: 30px;
+    color: white;
+    text-align: right;
+    font-weight: bold;
+    margin-left:  950px;
+    margin-right: 180px;
     margin-bottom: 50px;
   }
