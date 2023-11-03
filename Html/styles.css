@@ -108,6 +108,7 @@
     font-weight: bold;
     margin-right: 180px;
     margin-bottom: 50px;
+    margin-left: 45px;
   }
   
   .aboutus{
@@ -150,8 +151,8 @@
     }
 
   .info{
+    border-radius: 30px;
     background-color: rgb(131, 131, 131);
-    /* margin-bottom: 100px;     */
     }
 
   .footerImages{
