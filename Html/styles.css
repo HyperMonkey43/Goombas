@@ -61,8 +61,8 @@
   .logo-image{
     align-self: center;
     background-color: #ffffff00;
-    width: 450px;
-    height: 350px;
+    /* width: 450px;
+    height: 350px; */
   }
 
   .logotext{
@@ -111,20 +111,12 @@
   }
   
   .aboutus{
-    border-radius: 15px;
+    border-radius: 50px;
     background-color: rgb(243, 201, 150);
     margin-left: 65px;
     margin-right: 65px;
     margin-bottom: 100px;
   }
-
-  .chef{
-    border-radius: 15px;
-    background-color: rgb(255, 203, 126);
-    margin-left: 65px;
-    margin-right: 65px;
-    margin-bottom: 100px;
-    }
 
   .image{
     align-self: center;
@@ -158,14 +150,20 @@
     }
 
   .info{
-    background-color: rgb(182, 180, 180);
-    margin-bottom: 100px;    
+    background-color: rgb(131, 131, 131);
+    /* margin-bottom: 100px;     */
     }
 
-  .footerImages ul{
+  .footerImages{
     align-items: center;
     justify-content: center;
     display: flex;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .footerImages a{
+    margin-left: 20px;
   }
 
   .text-and-image-container {
@@ -177,3 +175,38 @@
   .text {
     flex: 1;  
   }
+
+  .copy{
+    text-align: center;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    max-width: 300px;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.item h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.item p {
+    font-size: 16px;
+    margin: 10px;
+} 
