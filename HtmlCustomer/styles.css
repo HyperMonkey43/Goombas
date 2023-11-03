@@ -1,6 +1,13 @@
 .topnav {
     background-color: #1d1d1de1;
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; 
+    transition: top 0.3s;
+    
   } 
 
   .topnav ul{
@@ -229,4 +236,15 @@
 
 .cart-button:hover {
   background-color: #f8542b;
+}
+.body {
+  margin-top: 70px;
+}
+.logo-image img {
+  width: 80px; 
+  height: 90px;
+  position: absolute;
+    left: 0;
+    top: 5px;
+
 }
