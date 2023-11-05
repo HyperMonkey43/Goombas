@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
     <title>Mario and Luigi</title>
 </head>
 <body class="body">
     <nav class="topnav">
         <ul>
-          <li class="logo-image"><img src="Screenshot_2023-11-02_115923-removebg-preview_1.png" alt="Logo" href="Index.html"></li>
+          <li class="logo-image"><img src="./static/Screenshot_2023-11-02_115923-removebg-preview_1.png" alt="Logo" href="Index.html"></li>
           <a class = "link" href="menu.html">Menu</a>
           <a class = "link" href="cart.html">Cart</a>
           <a class = "logo" href="Index.html">Mario and Luigi</a>
@@ -20,14 +20,14 @@
     <div>
         <h1 class="logotext">Mario and Luigi <br> Pizza</h1>
         <div class="image-container-logo">
-            <img class="logo-image" src="Screenshot_2023-11-02_115923-removebg-preview_1.png">
+            <img class="logo-image" src="./static/Screenshot_2023-11-02_115923-removebg-preview_1.png">
         </div>
     </div>
     <div class="aboutus">
         <p class="subtitle">About us</p>
         <div class="text-and-image-container">
           <div class="image-container">
-            <img class="imgleft" src="mario_luigi-removebg-preview.png">
+            <img class="imgleft" src="./static/mario_luigi-removebg-preview.png">
           </div>
           <div class="text">
             <p class="subtextR">At Mario and Luigi Pizza, we believe that great food should be a celebration of flavors and a warm, welcoming atmosphere. Our story begins with two brothers, Mario and Luigi, who hail from the charming Italian village of Napoli. They brought their family's treasured recipes and love for pizza to this vibrant city, aiming to share a slice of their culinary heritage.</p>
@@ -41,7 +41,7 @@
                 <p class="subtextR">Luigi's culinary prowess is nothing short of extraordinary. With a chef's hat perched confidently atop his head, he wields his spatula and whisk with the grace of an artist. Luigi's skill in the kitchen is like a symphony of flavors, harmoniously blending traditional Italian techniques with a creative twist that's all his own.</p>
             </div>
             <div class="image-container">
-              <img class="imgleft" src="mario_luigi-removebg-preview.png">
+              <img class="imgleft" src="./static/mario_luigi-removebg-preview.png">
             </div>
         </div>
       </div>
