@@ -47,7 +47,7 @@ if __name__ == "__main__":
     while True:
         try:
             loop()
-        except KeyboardInterrupt:  # Handle Ctrl+C to exit gracefully
+        except KeyboardInterrupt:
             print('Shutdown')
             board.shutdown()
             break
