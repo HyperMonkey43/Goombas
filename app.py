@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
-cart_items = []  # Initialize an empty cart
+cart_items = [] 
 @app.route('/')
 def home():
     return render_template('Index.html')
@@ -16,7 +16,7 @@ def cart():
 
     if request.method == 'POST':
         item_name = request.form.get('item_name')
-        cart_items.append(item_name)  # Add the item to the cart
+        cart_items.append(item_name) 
 
     return render_template('cart.html', cart_items=cart_items)
 
