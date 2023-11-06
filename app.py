@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 cart_items = []  # Initialize an empty cart
@@ -21,7 +21,7 @@ def cart():
     return render_template('cart.html', cart_items=cart_items)
 
 
-    
+
 if __name__ == '__main__':
     app.run(debug=True)
     
