@@ -215,10 +215,24 @@
 }
 
 img.princess{
+  max-width: 30%;
+    height: auto;
+}
+    img.truffle{
+  max-width: 55%;
+    height: auto;
+}
+img.pepperoni{
   max-width: 35%;
     height: auto;
 }
-.item h2 {
+
+img.margherita{
+  max-width: 48%;
+    height: auto;
+  }
+
+  .item h2 {
     font-size: 24px;
     margin: 10px 0;
 }
@@ -253,4 +267,36 @@ img.princess{
     top: 5px;
 }
 
+.cart {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Style the cart items list */
+.cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart li {
+  margin: 5px 0;
+}
+
+.cart a {
+  display: block;
+  margin-top: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.cart a:hover {
+  text-decoration: underline;
+}
+
+.price{
+  position: absolute;
+    right: 1cm;
+}
 

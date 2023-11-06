@@ -27,11 +27,14 @@
                     <li>{{ item.name }} - ${{ item.price }}</li>
                 {% endfor %}
             </ul>
-            <p>Total Price: ${{ total_price }}</p>
+            <p class="price">Total Price: ${{ total_price }}</p>
+            <ul>
+                <a href="menu">Back to Shopping</a>
+            </ul>
+            
+            <button type="submit">Checkout</button>
         </div>
-    <ul>
-        <a href="menu">Back to Shopping</a>
-    </ul>
+            
 
 </body>
 </html>
