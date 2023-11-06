@@ -20,13 +20,16 @@
     <h1 class="logotext">Cart</h1>
     <div class="">
 
-
-        <h1>Shopping Cart</h1>
-        <ul>
-            {% for item in cart_items %}
-                <li>{{ item }}</li>
-            {% endfor %}
-        </ul>
+        <div class="cart">
+            <h1>Your Shopping Cart</h1>
+            <ul>
+                {% for item in cart_items %}
+                    <li>{{ item.name }} - ${{ item.price }}</li>
+                {% endfor %}
+            </ul>
+            <p>Total Price: ${{ total_price }}</p>
+        </div>
+    <ul>
         <a href="menu">Back to Shopping</a>
     </ul>
 

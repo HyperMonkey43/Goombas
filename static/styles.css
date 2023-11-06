@@ -214,6 +214,10 @@
     height: auto;
 }
 
+img.princess{
+  max-width: 35%;
+    height: auto;
+}
 .item h2 {
     font-size: 24px;
     margin: 10px 0;
