@@ -121,7 +121,10 @@
             <img src="./static/images/Donkey Kong Banana Nutella Calzone pizza.jpg" alt="Chips">
             <h2>Donkey Kong Banana Nutella Calzone</h2>
             <p>Patatine fritte chips fatte in casa</p>
-            <button class="cart-button">Add to Cart</button>
+            <form method="POST" action="/cart">
+                <input type="hidden" name="item_name" value="Donkey Kong Banana Nutella Calzone">
+                <button type="submit" class="cart-button">Add to Cart</button>
+            </form>
         </div>
     </div>
 
