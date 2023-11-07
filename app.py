@@ -25,6 +25,15 @@ def cart():
 
     return render_template('cart.html', cart_items=cart_items, total_price=total_price)
 
+@app.route('/checkout', methods=['POST'])
+def checkout():
+    name = request.form.get('name')
+    address = request.form.get('address')
+
+    # You can save the order details or perform any necessary processing here
+
+    return render_template('checkout.html', name=name, address=address)
+
 if __name__ == '__main__':
     app.run(debug=True)
     

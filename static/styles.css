@@ -300,3 +300,39 @@ img.margherita{
     right: 1cm;
 }
 
+nav.subnav {
+  background-color: #333; 
+  padding: 10px 0; 
+  text-align: center;
+}
+
+
+nav.subnav ul {
+  list-style-type: none; 
+  padding: 0;
+}
+
+nav.subnav ul li {
+  display: inline;
+  margin-right: 20px; 
+}
+
+nav.subnav a.subnav-link {
+  color: #fff; 
+  text-decoration: none; 
+  font-size: 16px; 
+}
+
+
+nav.subnav a.current {
+  font-weight: bold; 
+  border-bottom: 2px solid #fff; 
+}
+
+#pizza-link {
+  font-weight: bold; 
+}
+
+.drinks, .sides {
+  display: none;
+}
