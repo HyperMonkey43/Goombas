@@ -4,6 +4,9 @@ import requests
 app = Flask(__name__)
 cart_items = []
 
+global central_server_url
+central_server_url = "http://192.168.0.119:5000/add_data"
+
 @app.route('/')
 def home():
     return render_template('Index.html')
@@ -20,7 +23,6 @@ def cart():
         item_name = request.form.get('item_name')
         item_price = float(request.form.get('item_price'))  
         cart_items.append({"name": item_name, "price": item_price})
-
     
     total_price = round(sum(item["price"] for item in cart_items), 2)
 
@@ -30,14 +32,15 @@ def cart():
 def checkout():
     name = request.form.get('name')
     address = request.form.get('address')
-    global central_server_url
-    central_server_url = "http://192.168.101.20:5000/add_data"
-
+    if request.method == 'POST':
+        create_sample()
     return render_template('checkout.html', name=name, address=address)
 
 def create_sample():
     requests.post(central_server_url, json = cart_items)
-                  
+
+create_sample()
+              
 if __name__ == '__main__':
     app.run(port=80,debug=True)
     
