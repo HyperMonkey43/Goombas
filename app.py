@@ -26,12 +26,19 @@ def cart():
 
     return render_template('cart.html', cart_items=cart_items, total_price=total_price)
 
-central_server_url = "http://192.168.101.20:5000/add_data"
+@app.route('/checkout', methods=['POST'])
+def checkout():
+    name = request.form.get('name')
+    address = request.form.get('address')
+    global central_server_url
+    central_server_url = "http://192.168.101.20:5000/add_data"
+
+    return render_template('checkout.html', name=name, address=address)
 
 def create_sample():
     requests.post(central_server_url, json = cart_items)
                   
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(port=80,debug=True)
     
 app.run()
