@@ -194,12 +194,146 @@
     </div>
 
     <div class="menu" id="drinks">
-        <p>rrrrrrrr</p>
+        <div class="item">
+            <img src="./static/images/redbull.jpg" alt="redbull">
+            <h2>regular-redbull</h2>
+            <p>0.25 liter redbull</p>
+            <p>3.49$</p> 
+            <form method="POST" action="/cart">
+                <input type="hidden" name="item_name" value="regular-redbull">
+                <input type="hidden" name="item_price" value="3.49">
+                <button type="submit" class="cart-button">Add to Cart</button>
+            </form>
+        </div>
+        <div class="item">
+            <img src="./static/images/cola.jpg" alt="cola">
+            <h2>Coca-cola</h2>
+            <p>0.33 liter Coca-cola</p>
+            <p>2.49$</p> 
+            <form method="POST" action="/cart">
+                <input type="hidden" name="item_name" value="Coca-Cola">
+                <input type="hidden" name="item_price" value="2.49">
+                <button type="submit" class="cart-button">Add to Cart</button>
+            </form>
+        </div>
+        <div class="item">
+            <img src="./static/images/zero.jpg" alt="cola zero">
+            <h2>Coca-cola</h2>
+            <p>0.33 liter Coca-Cola Zero</p>
+            <p>2.49$</p> 
+            <form method="POST" action="/cart">
+                <input type="hidden" name="item_name" value="Coca-Cola Zero">
+                <input type="hidden" name="item_price" value="2.49">
+                <button type="submit" class="cart-button">Add to Cart</button>
+            </form>
+        </div>
+        <div class="item">
+            <img src="./static/images/fanta.jpg" alt="fanta">
+            <h2>Fanta</h2>
+            <p>0.33 liter Fanta</p>
+            <p>2.49$</p> 
+            <form method="POST" action="/cart">
+                <input type="hidden" name="item_name" value="Fanta">
+                <input type="hidden" name="item_price" value="2.49">
+                <button type="submit" class="cart-button">Add to Cart</button>
+            </form>
+        </div>
+        <div class="item">
+            <img src="./static/images/water.jpg" class="margherita" alt="Water">
+            <h2>Water</h2>
+            <p>0.5 liter Water</p>
+            <p>1.5$</p> 
+            <form method="POST" action="/cart">
+                <input type="hidden" name="item_name" value="Water">
+                <input type="hidden" name="item_price" value="1.5">
+                <button type="submit" class="cart-button">Add to Cart</button>
+            </form>
+        </div>
+        <div class="item">
+            <img src="./static/images/lemonade.jpg" class="truffle" alt="lemonade">
+            <h2>Lemonade</h2>
+            <p>Fresh Lemonade Juice</p>
+            <p>5$</p> 
+            <form method="POST" action="/cart">
+                <input type="hidden" name="item_name" value="lemonade">
+                <input type="hidden" name="item_price" value="5">
+                <button type="submit" class="cart-button">Add to Cart</button>
+            </form>
+        </div>
+        
     </div>
 
     <div class="menu" id="sides">
-        <p>2222222222</p>
+        <div class="item">
+            <img src="./static/images/chicken.jpg" class="party" alt="chicken">
+            <h2>Chicken Party Box</h2>
+            <p class="desc">Two delicious flavors of chicken bites. 6 pieces of spicy chicken, and 6 pieces of buffalo chicken. Served with Ranch and dynamite dips</p>
+            <p>14.99$</p> 
+            <form method="POST" action="/cart">
+                <input type="hidden" name="item_name" value="Chicken Party Box">
+                <input type="hidden" name="item_price" value="14.99">
+                <button type="submit" class="cart-button">Add to Cart</button>
+            </form>
+        </div>
+        <div class="item">
+            <img src="./static/images/wings.jpg" class="princess" alt="chicken">
+            <h2>Chicken Wings</h2>
+            <p>Flavorful, oven-baked chicken wings, comes with ranch sauce</p>
+            <p>8.49$</p> 
+            <form method="POST" action="/cart">
+                <input type="hidden" name="item_name" value="Chicken Wings">
+                <input type="hidden" name="item_price" value="8.49">
+                <button type="submit" class="cart-button">Add to Cart</button>
+            </form>
+        </div>
+        <div class="item">
+            <img src="./static/images/ques.jpg" class="princess" alt="chicken">
+            <h2>Quesadilla</h2>
+            <p>Grilled Chicken Blended with Cheese and Folded into Flour Tortilla</p>
+            <p>6.49$</p> 
+            <form method="POST" action="/cart">
+                <input type="hidden" name="item_name" value="Chicken Wings">
+                <input type="hidden" name="item_price" value="6.49">
+                <button type="submit" class="cart-button">Add to Cart</button>
+            </form>
+        </div>
+        <div class="item">
+            <img src="./static/images/bites.jpg" class="princess" alt="chicken">
+            <h2>Chicken Bites</h2>
+            <p>Lightly breaded buffalo chicken breast come with ranch sauce</p>
+            <p>8.49$</p> 
+            <form method="POST" action="/cart">
+                <input type="hidden" name="item_name" value="Chicken Bites">
+                <input type="hidden" name="item_price" value="8.49">
+                <button type="submit" class="cart-button">Add to Cart</button>
+            </form>
+        </div>
+        <div class="item">
+            <img src="./static/images/churros.jpg" class="princess" alt="chicken">
+            <h2>Chicken Bites</h2>
+            <p>Famous spanish churros sprinkled with sugar.
+                Comes with the delicious chocolate dip</p>
+            <p>4.49$</p> 
+            <form method="POST" action="/cart">
+                <input type="hidden" name="item_name" value="Chicken Bites">
+                <input type="hidden" name="item_price" value="4.49">
+                <button type="submit" class="cart-button">Add to Cart</button>
+            </form>
+        </div>    
+        <div class="item">
+            <img src="./static/images/wedges.jpg" class="pepperoni" alt="chicken">
+            <h2>Potato Wedges</h2>
+            <p>Golden slices of potato infused with herbs</p>
+            <p>2.99$</p> 
+            <form method="POST" action="/cart">
+                <input type="hidden" name="item_name" value="Chicken Bites">
+                <input type="hidden" name="item_price" value="2.99">
+                <button type="submit" class="cart-button">Add to Cart</button>
+            </form>
+        </div>
     </div>
+        
+    
 
 </body>
 <script>
