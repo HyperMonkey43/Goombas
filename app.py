@@ -26,11 +26,6 @@ def cart():
 
     return render_template('cart.html', cart_items=cart_items, total_price=total_price)
 
-
-central_server_url = "http://145.93.53.72:5000/add_data"
-def create_sample():
-    requests.post(central_server_url, json = cart_items)
-    
 if __name__ == '__main__':
     app.run(debug=True)
     

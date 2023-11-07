@@ -18,7 +18,15 @@
         </ul>
     </nav>
 
-    <div class="menu">
+    <nav class="subnav">
+        <ul>
+            <li><a class="subnav-link" id="pizza-link" href="javascript:void(0);" onclick="hideElements(1)">Pizzas</a></li>
+            <li><a class="subnav-link" id="drinks-link" href="javascript:void(0);" onclick="hideElements(2)">Drinks</a></li>
+            <li><a class="subnav-link" id="sides-link" href="javascript:void(0);" onclick="hideElements(3)">Sides</a></li>            
+        </ul>
+    </nav>
+
+    <div class="menu" id="pizza">
         <div class="item">
             <img src="./static/images/Pepperoni.jpg" class="pepperoni" alt="Lasagna">
             <h2>Power-Up Pepperoni Pizza</h2>
@@ -185,5 +193,46 @@
         </div>
     </div>
 
+    <div class="menu" id="drinks">
+        <p>rrrrrrrr</p>
+    </div>
+
+    <div class="menu" id="sides">
+        <p>2222222222</p>
+    </div>
+
 </body>
+<script>
+    function hideElements(element) {
+        console.log(element)
+        if (element == 1) {
+            document.getElementById("pizza").style.display = "";
+            document.getElementById("drinks").style.display = "none";
+            document.getElementById("sides").style.display = "none"; 
+            
+            document.getElementById("pizza-link").style.fontWeight = "bold";
+            document.getElementById("drinks-link").style.fontWeight = "normal";
+            document.getElementById("sides-link").style.fontWeight = "normal";
+        }
+        else if (element == 2) {
+            document.getElementById("pizza").style.display = "none";
+            document.getElementById("drinks").style.display = "";
+            document.getElementById("sides").style.display = "none";      
+
+            document.getElementById("pizza-link").style.fontWeight = "normal";
+            document.getElementById("drinks-link").style.fontWeight = "bold";
+            document.getElementById("sides-link").style.fontWeight = "normal";
+        
+        }
+        else {
+            document.getElementById("pizza").style.display = "none";
+            document.getElementById("drinks").style.display = "none";
+            document.getElementById("sides").style.display = ""; 
+
+            document.getElementById("pizza-link").style.fontWeight = "normal";
+            document.getElementById("drinks-link").style.fontWeight = "normal";
+            document.getElementById("sides-link").style.fontWeight = "bold";
+        }
+    }
+</script>
 </html>
