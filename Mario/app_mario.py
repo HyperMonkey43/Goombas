@@ -1,17 +1,17 @@
 from flask import Flask, render_template, request
-
 app = Flask(__name__)
 
-data=''
+ceva = "hehe"
 
 @app.route('/add_data', methods = ['POST'])
 def add_data():
+    
     data = request.get_json()
-    return 200
+    print(data)
+    return {}
     
 @app.route('/')
 def index():
-   return render_template('mario.html')
+   return render_template('index.html', items = ceva)
 
-
-app.run()
+app.run(host = '192.168.0.119')
