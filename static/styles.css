@@ -345,3 +345,17 @@ nav.subnav a.current {
   font-size: large;
   text-align: center;
 }
+.buy-button{
+  background-color: #2d1f3c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.buy-button:hover {
+  opacity: 0.6;
+}
