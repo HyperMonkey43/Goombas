@@ -341,3 +341,7 @@ nav.subnav a.current {
 .drinks, .sides {
   display: none;
 }
+.cart{
+  font-size: large;
+  text-align: center;
+}
