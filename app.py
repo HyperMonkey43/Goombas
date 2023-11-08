@@ -39,9 +39,7 @@ def checkout():
 def create_sample():
     requests.post(central_server_url, json = cart_items)
 
-create_sample()
-              
 if __name__ == '__main__':
-    app.run(port=80,debug=True)
+    app.run(port=5000,debug=True)
     
 app.run()
