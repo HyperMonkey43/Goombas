@@ -6,10 +6,13 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
     <title>Order Confirmation</title>
 </head>
-<body class="body">
+<body  class="body cart">
     <h1>Order Confirmation</h1>
     <p>{{ name }}, your order is being prepared and will be delivered to:</p>
     <p>Address: {{ address }}</p>
     <p>Estimated Delivery Time: Approximately 15 minutes</p>
+    <ul>
+        <a href="/" class="price">Main Page</a>
+    </ul>
 </body>
 </html>
