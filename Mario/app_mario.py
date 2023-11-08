@@ -3,17 +3,21 @@ import json
 app = Flask(__name__)
 
 smth = []
-
-@app.route('/add_data', methods = ['POST'])
+n = 0
+@app.route('/add_data', methods=['POST'])
 def add_data():
     global smth
+    global n
+    
     data = request.get_json()
-    smth.append(data)
-    smth.pop()
-    smth.pop()
+    item_names = [item['name'] for item in data] if data else []
+    n+=1
+    smth.append(n)
+    smth.append(item_names)
+    return {}, 200
 
 @app.route('/')
 def index():
    return render_template('index.html', items = smth)
 
-app.run(host ='145.93.137.61')
+app.run(host ='145.93.49.97')

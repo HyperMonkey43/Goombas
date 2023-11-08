@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta http-equiv="refresh" content="10">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='../static/style2.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style2.css') }}">
     <title>Mario</title>
 </head>
 <body>
     <nav class="topnav">
         <ul>
-          <a class = "link" href="#cart">New order</a>
-          <a class = "logo" href="/">Home</a>
-          <a class = "link" href="#menu">Orders</a>
+            <a class="link" href="#cart">New order</a>
+            <a class="logo" href="/">Home</a>
+            <a class="link" href="#menu">Orders</a>
         </ul>
-    </nav>   
+    </nav>
     <div class="text">
         <br><br><br>
-        <p class="subtextL">{{items}}</p>
-      </div>
+        <p class="subtextL">
+            {% for item in items %}
+             {{ item }}<br>
+            {% endfor %}
+        </p>
+    </div>
 </body>
+</html>
