@@ -8,17 +8,12 @@ smth = []
 def add_data():
     global smth
     data = request.get_json()
-<<<<<<< HEAD
     smth.append(data)
-=======
-    # ceva  = json.loads(data)
-    print(data)
-    # print(ceva[0]['name'])
->>>>>>> 675894ee78f8eb98843c82167f8decda3e12fed7
-    return {}
-    
+    smth.pop()
+    smth.pop()
+
 @app.route('/')
 def index():
    return render_template('index.html', items = smth)
 
-app.run(host = '145.93.137.61')
+app.run(host ='145.93.137.61')
