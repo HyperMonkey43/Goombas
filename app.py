@@ -34,6 +34,7 @@ def checkout():
     address = request.form.get('address')
     if request.method == 'POST':
         create_sample()
+    cart_items.clear()    
     return render_template('checkout.html', name=name, address=address)
 
 def create_sample():
