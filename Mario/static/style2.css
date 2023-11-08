@@ -1,0 +1,355 @@
+body{
+    background-size: fill;
+    background-color: rgb(255, 255, 255)
+}
+
+.title{
+    font-size: 75px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.topnav {
+  background-color: #1d1d1de1;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100; 
+  transition: top 0.3s;
+  width: 100%;
+}
+
+.topnav ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  list-style-type: none;
+}
+
+.logo {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.link {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+
+.topnav a:hover {
+  background-color: #e4000f;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #e4000f;
+  color: white;
+}
+
+body {
+  background-image: url('istockphoto-512624640-612x612.jpg');
+  background-size: fill;
+  background-color: rgba(0, 0, 0, 0.87);
+  background-blend-mode: multiply;
+}
+
+.image-container-logo{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-top: 20px;
+}
+
+.logo-image{
+  align-self: center;
+  background-color: #ffffff00;
+  /* width: 450px;
+  height: 350px; */
+}
+
+.logotext{
+  font-size: 75px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.subtitle{
+  margin-top: 150px;
+  font-size: 55px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.subtextC{
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin-left:  200px;
+  margin-right: 200px;
+  margin-bottom: 10px;
+}
+
+.subtextL{
+  font-size: 30px;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  margin-left:  100px;
+  margin-right: 950px;
+  margin-bottom: 50px;
+}
+
+.subtextR{
+  font-size: 30px;
+  color: white;
+  text-align: right;
+  font-weight: bold;
+  margin-right: 180px;
+  margin-bottom: 50px;
+  margin-left: 45px;
+}
+
+.aboutus{
+  border-radius: 50px;
+  background-color: rgb(243, 201, 150);
+  margin-left: 65px;
+  margin-right: 65px;
+  margin-bottom: 100px;
+}
+
+.image{
+  align-self: center;
+  background-color: #ffffff00;
+  width: 550px;
+  height: 350px;
+  margin-top: 0px;
+  }
+
+.imgleft{
+  align-self: center;
+  background-color: #ffffff00;
+  width: 450px;
+  height: 400px;;
+  margin-left: 40px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  }
+
+.image-containerL{
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.image-container-menu{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-bottom: 50px;
+  }
+
+.info{
+  border-radius: 30px;
+  background-color: rgb(131, 131, 131);
+  }
+
+.footerImages{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footerImages a{
+  margin-left: 20px;
+}
+
+.text-and-image-container {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+}
+
+.text {
+  flex: 1;  
+}
+
+.copy{
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+.item {
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  width: 420px;
+  height: 350px;
+  margin-top: 69px ;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.item img {
+  max-width: 40%;
+  height: auto;
+}
+
+img.princess{
+max-width: 30%;
+  height: auto;
+}
+img.party{
+max-width: 20%;
+  height: auto;
+}
+  img.truffle{
+max-width: 55%;
+  height: auto;
+}
+img.pepperoni{
+max-width: 35%;
+  height: auto;
+}
+
+img.margherita{
+max-width: 48%;
+  height: auto;
+}
+
+.item h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.item p {
+  font-size: 20px;
+  margin: 10px;
+} 
+
+.cart-button {
+background-color: #a03219;
+color: #fff;
+border: none;
+padding: 10px 20px;
+margin: 20px 0;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+}
+
+.cart-button:hover {
+background-color: #f8542b;
+}
+.body {
+margin-top: 70px;
+}
+.logo-image img {
+width: 90px; 
+height: 86px;
+position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.cart {
+background-color: #fff;
+padding: 20px;
+border: 1px solid #ddd;
+border-radius: 5px;
+}
+
+/* Style the cart items list */
+.cart ul {
+list-style-type: none;
+padding: 0;
+}
+
+.cart li {
+margin: 5px 0;
+}
+
+.cart a {
+display: block;
+margin-top: 10px;
+color: #333;
+text-decoration: none;
+}
+
+.cart a:hover {
+text-decoration: underline;
+}
+
+.price{
+position: absolute;
+  right: 1cm;
+}
+
+nav.subnav {
+background-color: #333; 
+padding: 10px 0; 
+text-align: center;
+}
+
+
+nav.subnav ul {
+list-style-type: none; 
+padding: 0;
+}
+
+nav.subnav ul li {
+display: inline;
+margin-right: 20px; 
+}
+
+nav.subnav a.subnav-link {
+color: #fff; 
+text-decoration: none; 
+font-size: 16px; 
+}
+
+
+nav.subnav a.current {
+font-weight: bold; 
+border-bottom: 2px solid #fff; 
+}
+
+#pizza-link {
+font-weight: bold; 
+}
+
+.drinks, .sides {
+display: none;
+}

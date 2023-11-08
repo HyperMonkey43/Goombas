@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='../static/style2.css')}}">
     <title>Mario</title>
 </head>
 <body>
     <nav class="topnav">
         <ul>
-          <a class = "link" href="cart">New order</a>
+          <a class = "link" href="#cart">New order</a>
           <a class = "logo" href="/">Home</a>
-          <a class = "link" href="menu">Orders</a>
+          <a class = "link" href="#menu">Orders</a>
         </ul>
     </nav>   
-    <p>{{items}}</p> 
+    <div class="text">
+        <br><br><br>
+        <p class="subtextL">{{items}}</p>
+      </div>
 </body>

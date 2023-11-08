@@ -5,7 +5,7 @@ app = Flask(__name__)
 cart_items = []
 
 global central_server_url
-central_server_url = "http://192.168.0.119:5000/add_data"
+central_server_url = "http://145.93.49.97:5000/add_data"
 
 @app.route('/')
 def home():
