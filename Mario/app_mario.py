@@ -12,8 +12,7 @@ def add_data():
     data = request.get_json()
     item_names = [item['name'] for item in data] if data else []
     n+=1
-    smth.append(n)
-    smth.append(item_names)
+    smth.append({'order': n, 'items': item_names })
     return {}, 200
 
 @app.route('/')

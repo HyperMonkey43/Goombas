@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="refresh" content="10">
+    <meta http-equiv="refresh" content="3">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style2.css') }}">
@@ -18,8 +18,12 @@
     <div class="text">
         <br><br><br>
         <p class="subtextL">
-            {% for item in items %}
-             {{ item }}<br>
+            {% for i in range(0, len(items) - 1) %}
+            {% item = items[i] %}
+             {{ item['order'] }}<br>
+             {% for pizza in item['items'] %}
+                {{ pizza }}<br>
+             {% endfor %}
             {% endfor %}
         </p>
     </div>
