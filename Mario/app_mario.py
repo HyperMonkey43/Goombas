@@ -7,13 +7,13 @@ ceva = []
 @app.route('/add_data', methods = ['POST'])
 def add_data():
     data = request.get_json()
-    ceva  = json.loads(data)
+    # ceva  = json.loads(data)
     print(data)
-    print(ceva[0]['name'])
+    # print(ceva[0]['name'])
     return {}
     
 @app.route('/')
 def index():
    return render_template('index.html', items = ceva)
 
-app.run(host = '145.93.49.97')
+app.run(host = '145.93.137.61')
