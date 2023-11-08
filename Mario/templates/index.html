@@ -18,12 +18,11 @@
     <div class="text">
         <br><br><br>
         <p class="subtextL">
-            {% for i in range(0, len(items) - 1) %}
-            {% item = items[i] %}
-             {{ item['order'] }}<br>
-             {% for pizza in item['items'] %}
-                {{ pizza }}<br>
-             {% endfor %}
+            {% for item in items %}
+                {{ item['order'] }}<br>
+                {% for pizza in item['items'] %}
+                    {{ pizza }}<br>
+                {% endfor %}
             {% endfor %}
         </p>
     </div>

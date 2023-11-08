@@ -19,4 +19,4 @@ def add_data():
 def index():
    return render_template('index.html', items = smth)
 
-app.run(host ='145.93.49.97')
+app.run(host ='192.168.0.119')
