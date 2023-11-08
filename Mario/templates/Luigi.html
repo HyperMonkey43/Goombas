@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="refresh" content="3">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style2.css') }}">
-    <title>Mario</title>
+    <title>Luigi</title>
 </head>
 <body>
     <nav class="topnav">
         <ul>
-            <a class="logo" href="/Mario">Mario</a>
-            <a class="logo" href="/">Luigi</a>
+          <a class = "logo" href="/Mario">Mario</a>
+          <a class = "logo" href="/">Luigi</a>
         </ul>
     </nav>
     <div class="text">
@@ -19,11 +18,15 @@
         <p class="subtextL">
             {% for item in items %}
                 {{ item['order'] }}<br>
-                {% for pizza in item['items'] %}
-                    {{ pizza }}<br>
-                {% endfor %}
             {% endfor %}
+            {% for name in names %}
+                {{ name }}<br>
+            {% endfor %}
+            {% for address in addresses %}
+                {{ address }}<br>
+            {% endfor %}
+
         </p>
     </div>
+    
 </body>
-</html>

@@ -30,6 +30,8 @@ def cart():
 
 @app.route('/checkout', methods=['POST'])
 def checkout():
+    global name
+    global address
     name = request.form.get('name')
     address = request.form.get('address')
     if request.method == 'POST':
@@ -38,7 +40,7 @@ def checkout():
     return render_template('checkout.html', name=name, address=address)
 
 def create_sample():
-    requests.post(central_server_url, json = cart_items)
+    requests.post(central_server_url, json = [cart_items,name,address])
 
 if __name__ == '__main__':
     app.run(port=5000,debug=True)
